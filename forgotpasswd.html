@@ -91,54 +91,20 @@
 
 
             <div class="register justify-content-center align-items-center">
-                <div class="main-button register-buttons">
-                    <a href="#">log in</a>
-                    <a href="#">register</a>
-                </div>
+                   <h1 class="h1-form-forgot">Forgot Password</h1>
                 <form class="register-form" action="">
                     <input class="footer-text__email register-input" type="text" placeholder="Email" name="email" required> <br>
-                    <input class="footer-text__email register-input" type="password" placeholder="Password" name="psw" required>
                 </form>
-                <a class="regoster-log-in" href="#">log in</a> <br> <br> <br>
-                <a class="register-forgot" href="#">Forgot Password</a>
+                <a class="regoster-log-in" href="#">Send code</a> <br> <br> <br>
+                <a class="register-forgot" href="#">Have Login</a>
             </div>
             
         </div>
     </header>
 
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')</script>
 	<script src="slick/slick.min.js"></script>
-
     <script>
         $(document).ready(function(){
             var link = $('.menu-link');
@@ -156,35 +122,4 @@
             });
         });
     </script>
-
-    <script>
-        $('.team-slider').slick({
-				arrows: true,
-				slidesToShow: 3,
-				slidesToScroll: 1,
-				prevArrow: '<div class="slider-arrow slider-arrow_prod slider-arrow_left"></div>',
-				nextArrow: '<div class="slider-arrow slider-arrow_prod slider-arrow_right"></div>',
-                responsive: [
-                {
-                  breakpoint: 991,
-                      settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-
-                      }
-                    },
-                    {
-                      breakpoint: 768,
-                      settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-
-                      }
-                    }
-                    
-           ]
-			});   
-    </script>
-
 </body>
-</html>

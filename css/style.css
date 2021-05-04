@@ -5,6 +5,13 @@
     outline: none;
     border: 0;
 }
+#myChart3{
+    width: 320px !important;
+    height: 320px !important;
+  }
+iframe{
+    border-radius: 20px;
+}
 body{
 	font-family: 'Rubik', 'Hind', sans-serif;
 }
@@ -275,6 +282,9 @@ li {
 
 
 
+
+
+
 .wallets{
     margin-bottom: 250px;
 }
@@ -417,7 +427,27 @@ li {
 .charts-text{
     margin-bottom: 40px;
 }
+.chart-pie{
+    margin-top: 100px;
+}
+table{
+	width: 100%;
+	border-spacing:0;
+	height: auto;
+    color: #4F4F4F;
+}
+.tbody{
+    width: 100%;
+}
+.iksweb tbody tr:first-child{
+    background-color: #090F3F;
+    color: #fff;
+}
 
+table.iksweb td,table.iksweb th {
+	padding: 20px 1px;
+	height: 35px;
+}
 
 
 
@@ -613,7 +643,7 @@ li {
     background: #F8BA1A;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     width: 150px;
-    height: 45px;
+    height: 50px;
     border-radius: 50px;
     color: #090F3F;
     font-family: 'Hind';
@@ -896,9 +926,79 @@ form span{
     text-transform: none;
     font-weight: 300;
 }
+.repeat-passwd{
+    display: block !important;
+    margin: auto !important;
+}
+.reg-button{
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+    border-radius: 28px;
+    padding: 15px 54px !important;
+    background-color: transparent !important;
+}
+.reg-button-reg{
+    background-color: #F8BA1A !important;
+    border-radius: 28px;
+    padding: 15px 46px !important;
+    border: none !important;
+}
+.h1-form-forgot{
+    font-family: Hind;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+.video-block{
+    margin-bottom: 50px;
+}
+.video-block iframe{
+    margin-bottom: 15px;
+}
+.video-block__text{
+    text-align: left !important;
+}
+.video-block__title{
+    font-size: 18px;
+    color: #090F3F;
+    margin-bottom: 20px;
+}
+.video-block__date{
+    color: #4F4F4F;
+    font-size: 18px;
+    font-family: 'Hind';
+    font-weight: 300;
+}
+.video-block__date span::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: #F8BA1A;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.videos-bloks a{
+    background-color: #F8BA1A;
+    padding: 15px 60px;
+}
 
 
 
@@ -1258,7 +1358,6 @@ form span{
     .register{
         margin-top: 100px;
     }
-    
 
 
 
@@ -1556,6 +1655,9 @@ form span{
     .charts-m img{
         width: 100%;
     }
+    .iksweb tbody tr td, th{
+        display: block;
+    }
 
 
 
@@ -1684,6 +1786,9 @@ form span{
     .register{
         margin-top: 100px;
     }
+    .register br{
+        display: n;
+    }
 
     .regoster-log-in{
         padding: 15px 100px;
@@ -1720,10 +1825,12 @@ form span{
         background-size: cover;
         padding-bottom: 30rem;
     }
+
     .main-button a{
         margin: 0 auto !important;
         text-align: center;
     }
+
     .main-title{
         font-size: 30px;
     }
@@ -1791,5 +1898,10 @@ form span{
     }
     .donate-tile__icon img{
         width: 70%;
+    }
+    .reg-button{
+        padding: 15px 34px !important; }
+    .reg-button-reg{
+        padding: 15px 34px !important;
     }
 }
