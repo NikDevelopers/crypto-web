@@ -7,6 +7,7 @@
     <title>crypto</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- Rubik fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,6 +20,7 @@
     <!-- slider -->
     <link rel="stylesheet" href="slick/slick.css">
 	<link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/stacktable.css">
 </head>
 <body>
 
@@ -35,9 +37,9 @@
 		<li><a class="list-text" href="userguid.html">RESOURCES</a></li>
 		<li><a class="list-text" href="team.html">TEAM</a></li>
 		<li><a class="list-text" href="about.html">FEATURES</a></li>
-		<li><a class="list-text" href="#">COMMUNITY</a></li>
+		<li><a class="list-text" href="network.html">COMMUNITY</a></li>
 		<li><a class="list-text" href="#">DOWLOADS</a></li>
-		<li><a class="list-text menu-a__item" href="reg.html">CONTACT US</a></li>
+		<li><a class="list-text menu-a__item" href="register.html">CONTACT US</a></li>
         <li class="li-burger__icon">
             <img class="burger-icon" src="img/pin-logoG.png" alt="">
             <img class="burger-icon" src="img/facebook-logoG.png" alt="">
@@ -85,13 +87,13 @@
                                 <a href="about.html">features</a>
                             </li>
                             <li class="menu-item">
-                                <a href="">community</a>
+                                <a href="network.html">community</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#">downloads</a>
                             </li>
                             <li class="menu-item menu-a__item">
-                                <a href="reg.html">contuct us</a>
+                                <a href="register.html">contuct us</a>
                             </li>
                         </ul>
                     </nav>
@@ -433,7 +435,7 @@
         <div class="roadmap-text">
             <div class="roadmap-text__title">
                 <hr class="welcome-text__line" size=5px width=95px color="#CF1257">
-                <p class="welcome-text__title__p main-subtitle">07. TEAM</p> 
+                <p class="welcome-text__title__p main-subtitle">04. ROADMAP</p> 
             </div>
             <div class="roadmap-text__subtitle welcome-text__subtitle">
                 Implementation Sheet
@@ -510,11 +512,11 @@
                         </div>
                         <div class="network-text__nums d-flex">
                             <div class="network-text__num">
-                                50 <b class="plus__pink">+</b> 
+                                <span class="count">50</span> <b class="plus__pink">+</b> 
                                 <em class="num__text d-block">Exchanges</em>
                             </div>
                             <div class="network-text__num">
-                                180 <b class="plus__pink">+</b> 
+                                <span class="count">180</span>  <b class="plus__pink">+</b> 
                                 <em class="num__text d-block">Companies</em>
                             </div>
                         </div>
@@ -728,7 +730,7 @@
                             Current Price
                         </div>
                         <div class="charts-text__num">
-                            $541.27
+                            <span class="count1">$541.27</span> 
                         </div>
                         <img src="img/charts1.png" alt="">
                     </div>
@@ -738,7 +740,7 @@
                             Market Cap 
                         </div>
                         <div class="charts-text__num">
-                            $147 547 106
+                           <span class="count1">$147 547 106</span> 
                         </div>
                         <img src="img/charts2.png" alt="">
                     </div>
@@ -1122,7 +1124,8 @@
             </div>
             <form action="URL">
                 <input class="footer-text__email" type="email" placeholder="Enter your Email">
-                <input class="footer-text__submit" type="submit" value="Sign in">
+                <a href="register.html"><input class="footer-text__submit" type="submit" value="Sign in"></a>
+                
                 <p><input class="checkbox" type="checkbox"><span class="miner-text__descr network-text__descr">I have read and agree to the terms & conditions</span> </p>
             </form>
             <div class="footer-icon__link align-items-center ">
@@ -1148,7 +1151,7 @@
 
 
 
-
+    <script src="js/stacktable.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')</script>
 	<script src="slick/slick.min.js"></script>
@@ -1228,6 +1231,31 @@
 				slidesToShow: 1,
 				slidesToScroll: 1,
 			});    
+    </script>
+    <script>
+        jQuery(document).ready(function($){
+            jQuery(function($){
+                $('.iksweb tbody').stacktable();
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+$('.count').each(function () {
+   $(this).prop('Counter',0).animate({
+    Counter: $(this).text()
+    }, {
+     duration: 1600,
+     easing: 'swing',
+     step: function (now) {
+        $(this).text(Math.ceil(now));
+     }
+    });
+});
+
+}); 
     </script>
 
 </body>
